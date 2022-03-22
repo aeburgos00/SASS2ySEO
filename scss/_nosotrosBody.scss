@@ -1,0 +1,94 @@
+@media only screen and (max-width: 768px) {
+    main {
+        .contenedorPadre__nosotros {
+            display: grid;
+            grid-template-areas:
+            "titulo"
+            "texto"
+            "imagen";
+            grid-template-columns: 100%;
+            .tituloDePagina__contenedor {grid-area: titulo;}
+            .nosotros__texto {
+                grid-area: texto;
+                margin: 0 20px 12px 20px;
+                line-height: 20px;
+                font-size: 16px;
+                display: flex;
+                justify-content: center;
+            }
+            .nosotros__imagen {
+                grid-area: imagen;
+                margin: 0 auto 24px;
+                display: flex;
+                justify-content: center;
+                .img__nosotros {
+                    border-radius: 5px;
+                    width: 80%;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 769px) and (max-width: 1023px) {
+    main {
+        .contenedorPadre__nosotros {
+            display: grid;
+            grid-template-areas:
+            "titulo"
+            "texto"
+            "imagen";
+            grid-template-columns: 100%;
+            .tituloDePagina__contenedor {grid-area: titulo;}
+            .nosotros__texto {
+                grid-area: texto;
+                margin: 0 40px 24px 40px;
+                line-height: 20px;
+                font-size: 16px;
+                display: flex;
+                justify-content: center;
+                p{margin:0;}
+            }
+            .nosotros__imagen {
+                grid-area: imagen;
+                margin: 0 auto 24px;
+                display: flex;
+                justify-content: center;
+                .img__nosotros {
+                    border-radius: 5px;
+                    width: 80%;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    main {
+        .contenedorPadre__nosotros {
+            display: grid;
+            grid-template-areas:
+            "titulo titulo"
+            "texto imagen";
+            grid-template-columns: 50% 50%;
+            .tituloDePagina__contenedor {grid-area: titulo;}
+            .nosotros__texto {
+                grid-area: texto;
+                margin: 0 40px 40px 40px;
+                line-height: 24px;
+                p{margin: 0;}
+            }
+            .nosotros__imagen {
+                grid-area: imagen;
+                margin: 0 0 40px 0;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                .img__nosotros {
+                    border-radius: 5px;
+                    width: 80%;
+                }
+            }
+        }
+    }
+}
