@@ -1,0 +1,15 @@
+@mixin tamBox($width, $height) {
+    width: $width;
+    height: $height;
+}
+
+@mixin flexCenterCenter {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@mixin colorYbg($color, $bg) {
+    color: $color;
+    background-color: $bg;
+}

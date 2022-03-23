@@ -25,10 +25,8 @@ body {
 @media only screen and (max-width: 768px) {
     main {
         .tituloDePagina__contenedor {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 56px;
+            @include flexCenterCenter;
+            @include tamBox(100%, 56px);
             margin: 24px 0;
             .tituloDePagina__titulo {
                 text-transform: uppercase;
@@ -42,10 +40,8 @@ body {
 @media only screen and (min-width: 769px) and (max-width: 1023px) {
     main {
         .tituloDePagina__contenedor {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 128px;
+            @include flexCenterCenter;
+            @include tamBox(100%, 128px);
             .tituloDePagina__titulo {
                 text-transform: uppercase;
                 font-size: 40px;
@@ -58,10 +54,8 @@ body {
 @media only screen and (min-width: 1024px) {
     main {
         .tituloDePagina__contenedor {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 128px;
+            @include flexCenterCenter;
+            @include tamBox(100%, 128px);
             .tituloDePagina__titulo {
                 text-transform: uppercase;
                 font-size: 40px;

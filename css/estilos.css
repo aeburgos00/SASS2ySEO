@@ -24,8 +24,9 @@ body {
 @media only screen and (max-width: 768px) {
   main .tituloDePagina__contenedor {
     display: flex;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
+    width: 100%;
     height: 56px;
     margin: 24px 0; }
     main .tituloDePagina__contenedor .tituloDePagina__titulo {
@@ -36,8 +37,9 @@ body {
 @media only screen and (min-width: 769px) and (max-width: 1023px) {
   main .tituloDePagina__contenedor {
     display: flex;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
+    width: 100%;
     height: 128px; }
     main .tituloDePagina__contenedor .tituloDePagina__titulo {
       text-transform: uppercase;
@@ -47,8 +49,9 @@ body {
 @media only screen and (min-width: 1024px) {
   main .tituloDePagina__contenedor {
     display: flex;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
+    width: 100%;
     height: 128px; }
     main .tituloDePagina__contenedor .tituloDePagina__titulo {
       text-transform: uppercase;
@@ -57,6 +60,7 @@ body {
 
 @media only screen and (max-width: 768px) {
   .header__superior {
+    width: 100%;
     height: 64px;
     display: grid;
     grid-template-areas: "logo busqueda iconos";
@@ -67,16 +71,16 @@ body {
     .header__superior .header__logo--mobile {
       grid-area: logo;
       display: flex;
-      justify-content: center;
-      align-items: center; }
+      align-items: center;
+      justify-content: center; }
     .header__superior .header__logo--tam {
       width: 10vw;
       max-width: 40px; }
     .header__superior .header__busqueda {
       grid-area: busqueda;
       display: flex;
-      justify-content: center;
-      align-items: center; }
+      align-items: center;
+      justify-content: center; }
       .header__superior .header__busqueda h5 {
         display: none; }
       .header__superior .header__busqueda .header__busqueda__bar--boton {
@@ -102,13 +106,13 @@ body {
         .header__superior .header__iconos .contenedor__header--iconos .header__iconos--carrito {
           grid-area: carrito;
           display: flex;
-          justify-content: center;
-          align-items: center; }
+          align-items: center;
+          justify-content: center; }
         .header__superior .header__iconos .contenedor__header--iconos .contenedor__icono--mobile {
           grid-area: burger;
           display: flex;
-          justify-content: center;
-          align-items: center; }
+          align-items: center;
+          justify-content: center; }
         .header__superior .header__iconos .contenedor__header--iconos svg.icono {
           color: #660099;
           width: 7vw;
@@ -120,6 +124,7 @@ body {
 
 @media only screen and (min-width: 769px) and (max-width: 1023px) {
   .header__superior {
+    width: 100%;
     height: 64px;
     display: grid;
     grid-template-areas: "logo busqueda iconos";
@@ -130,16 +135,16 @@ body {
     .header__superior .header__logo--mobile {
       grid-area: logo;
       display: flex;
-      justify-content: center;
-      align-items: center; }
+      align-items: center;
+      justify-content: center; }
     .header__superior .header__logo--tam {
       width: 10vw;
       max-width: 40px; }
     .header__superior .header__busqueda {
       grid-area: busqueda;
       display: flex;
-      justify-content: center;
-      align-items: center; }
+      align-items: center;
+      justify-content: center; }
       .header__superior .header__busqueda h5 {
         display: none; }
       .header__superior .header__busqueda .header__busqueda__bar--boton {
@@ -165,13 +170,13 @@ body {
         .header__superior .header__iconos .contenedor__header--iconos .header__iconos--carrito {
           grid-area: carrito;
           display: flex;
-          justify-content: center;
-          align-items: center; }
+          align-items: center;
+          justify-content: center; }
         .header__superior .header__iconos .contenedor__header--iconos .contenedor__icono--mobile {
           grid-area: burger;
           display: flex;
-          justify-content: center;
-          align-items: center; }
+          align-items: center;
+          justify-content: center; }
         .header__superior .header__iconos .contenedor__header--iconos svg.icono {
           color: #660099;
           width: 7vw;
@@ -190,12 +195,12 @@ body {
     .header__superior .header__logo {
       grid-area: logo;
       display: flex;
-      justify-content: center;
-      align-items: center; }
+      align-items: center;
+      justify-content: center; }
       .header__superior .header__logo a {
         display: flex;
-        justify-content: center;
-        align-items: center; }
+        align-items: center;
+        justify-content: center; }
       .header__superior .header__logo .header__logo--tam {
         width: 75%; }
     .header__superior .header__logo--mobile {
@@ -203,8 +208,8 @@ body {
     .header__superior .header__busqueda {
       grid-area: busqueda;
       display: flex;
-      justify-content: center;
-      align-items: center; }
+      align-items: center;
+      justify-content: center; }
       .header__superior .header__busqueda h5 {
         font-family: "Montserrat", sans-serif;
         font-size: 16px; }
@@ -220,8 +225,8 @@ body {
     .header__superior .header__iconos {
       grid-area: iconos;
       display: flex;
-      justify-content: center;
-      align-items: center; }
+      align-items: center;
+      justify-content: center; }
       .header__superior .header__iconos h4 {
         color: #660099;
         text-transform: uppercase;
@@ -237,7 +242,8 @@ body {
         width: 30px; }
       .header__superior .header__iconos .contenedor__header--iconos .contenedor__flecha--abajo {
         display: flex;
-        align-items: center; }
+        align-items: center;
+        justify-content: center; }
   nav {
     background-color: #660099; }
     nav .header__nav {
@@ -361,14 +367,569 @@ body {
     background: #f6c504;
     height: 56px;
     display: flex;
-    justify-content: center;
-    align-items: center; }
+    align-items: center;
+    justify-content: center; }
     footer .footer__derechos h3 {
       margin: 0;
       color: #660099;
       font-size: 20px; }
     footer .footer__derechos nav {
       display: none; } }
+
+@media only screen and (max-width: 768px) {
+  .contenedor-main {
+    display: grid;
+    grid-template-areas: "destacado" "subtituloProdDes" "prodDes" "subtituloSucPrin" "sucPrin";
+    grid-template-columns: 100%;
+    grid-template-rows: auto; }
+    .contenedor-main .icono__flecha {
+      width: 100%; }
+    .contenedor-main .section__bg {
+      background-image: url(../assets/img/pick1.jpg);
+      background-repeat: no-repeat;
+      background-size: cover;
+      height: 250px; }
+    .contenedor-main .destacado {
+      grid-area: destacado;
+      display: grid;
+      grid-template-areas: "fleIzq botonDes fleDer";
+      grid-template-columns: 10% 80% 10%; }
+      .contenedor-main .destacado .icono__flecha--izquierda {
+        grid-area: fleIzq;
+        display: flex;
+        align-items: center;
+        justify-content: center; }
+        .contenedor-main .destacado .icono__flecha--izquierda .icono__flecha--secundaria {
+          color: #f6c504; }
+      .contenedor-main .destacado .destacado__imagen {
+        display: none; }
+      .contenedor-main .destacado .icono__flecha--derecha {
+        grid-area: fleDer;
+        display: flex;
+        align-items: center;
+        justify-content: center; }
+        .contenedor-main .destacado .icono__flecha--derecha .icono__flecha--secundaria {
+          color: #f6c504; }
+      .contenedor-main .destacado .destacado__textos {
+        grid-area: botonDes;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: center;
+        margin: 0 0 20px 0; }
+        .contenedor-main .destacado .destacado__textos .subtitulo__texto {
+          color: #fff;
+          text-transform: uppercase;
+          margin: 0 0 0 5vw;
+          font-size: 1.5vh; }
+        .contenedor-main .destacado .destacado__textos .subtitulo__texto--destacado {
+          margin: 0;
+          font-size: 5vw;
+          text-shadow: 0 0 10px #f6c504;
+          text-align: center;
+          margin-bottom: 10px; }
+        .contenedor-main .destacado .destacado__textos .boton__principal {
+          color: #660099;
+          background-color: #f6c504;
+          width: 60%;
+          height: 15%;
+          text-transform: uppercase;
+          font-weight: bold;
+          font-size: 3vw;
+          border: 5px outset #fefd97;
+          box-shadow: 3px 3px 20px 0 #000;
+          border-radius: 10px; }
+    .contenedor-main .subtitulo {
+      background: #660099;
+      height: 5vh;
+      display: flex;
+      align-items: center; }
+      .contenedor-main .subtitulo .subtitulo__texto {
+        color: #fff;
+        text-transform: uppercase;
+        margin: 0 0 0 5vw;
+        font-size: 1.5vh; }
+    .contenedor-main .subt1 {
+      grid-area: subtituloProdDes; }
+    .contenedor-main .productosDestacados {
+      grid-area: prodDes;
+      display: grid;
+      grid-template-areas: "fleIzq cardProd fleDer";
+      grid-template-columns: 10% 80% 10%; }
+      .contenedor-main .productosDestacados .icono__flecha--izquierda {
+        grid-area: fleIzq;
+        display: flex;
+        align-items: center;
+        justify-content: center; }
+        .contenedor-main .productosDestacados .icono__flecha--izquierda .icono__flecha--principal {
+          color: #660099; }
+      .contenedor-main .productosDestacados .contenedor__cardProducto {
+        grid-area: cardProd;
+        display: flex;
+        justify-content: space-evenly; }
+        .contenedor-main .productosDestacados .contenedor__cardProducto .cardProducto {
+          width: 50%;
+          box-shadow: 0px 0px 20px 0 #000;
+          border-radius: 5px;
+          margin: 20px 0;
+          flex-direction: column;
+          display: flex;
+          align-items: center;
+          justify-content: center; }
+          .contenedor-main .productosDestacados .contenedor__cardProducto .cardProducto .cardProducto__img {
+            width: 80%; }
+          .contenedor-main .productosDestacados .contenedor__cardProducto .cardProducto .cardProducto__titulo {
+            text-transform: uppercase;
+            font-size: 20px;
+            text-align: center; }
+          .contenedor-main .productosDestacados .contenedor__cardProducto .cardProducto .cardProducto__descripcion {
+            display: none; }
+          .contenedor-main .productosDestacados .contenedor__cardProducto .cardProducto .cardProducto__precio {
+            font-size: 30px; }
+        .contenedor-main .productosDestacados .contenedor__cardProducto .prod2, .contenedor-main .productosDestacados .contenedor__cardProducto .prod3 {
+          display: none; }
+      .contenedor-main .productosDestacados .icono__flecha--derecha {
+        grid-area: fleDer;
+        display: flex;
+        align-items: center;
+        justify-content: center; }
+        .contenedor-main .productosDestacados .icono__flecha--derecha .icono__flecha--principal {
+          color: #660099; }
+    .contenedor-main .subt2 {
+      grid-area: subtituloSucPrin; }
+    .contenedor-main .sucursalesPrincipales {
+      grid-area: sucPrin;
+      display: grid;
+      grid-template-areas: "fleIzq cardSucur fleDer";
+      grid-template-columns: 10% 80% 10%; }
+      .contenedor-main .sucursalesPrincipales .icono__flecha--izquierda {
+        grid-area: fleIzq;
+        display: flex;
+        align-items: center;
+        justify-content: center; }
+        .contenedor-main .sucursalesPrincipales .icono__flecha--izquierda .icono__flecha--principal {
+          color: #660099; }
+      .contenedor-main .sucursalesPrincipales .contenedor__cardSucursales {
+        grid-area: cardSucur;
+        display: flex;
+        justify-content: space-evenly; }
+        .contenedor-main .sucursalesPrincipales .contenedor__cardSucursales .cardSucursales {
+          width: 80%;
+          display: flex;
+          flex-direction: column;
+          align-items: center; }
+          .contenedor-main .sucursalesPrincipales .contenedor__cardSucursales .cardSucursales .contenedor__imagenSucursal {
+            width: 70%;
+            height: 35vw;
+            overflow: hidden;
+            margin: 20px 40px 10px 40px;
+            position: relative;
+            border-radius: 10px; }
+            .contenedor-main .sucursalesPrincipales .contenedor__cardSucursales .cardSucursales .contenedor__imagenSucursal .cardSucursales__imagen {
+              position: absolute;
+              width: 500px;
+              left: -100%;
+              right: -100%;
+              top: -100%;
+              bottom: -100%;
+              margin: auto;
+              min-height: 100%;
+              min-width: 100%; }
+          .contenedor-main .sucursalesPrincipales .contenedor__cardSucursales .cardSucursales .cardSucursales__titulo {
+            display: flex;
+            justify-content: center;
+            font-size: 20px;
+            margin: 10px 0 10px 0; }
+          .contenedor-main .sucursalesPrincipales .contenedor__cardSucursales .cardSucursales .cardSucursales__info svg.iconoSucursal {
+            width: 30px; }
+          .contenedor-main .sucursalesPrincipales .contenedor__cardSucursales .cardSucursales .cardSucursales__info .cardSucursales__info--direccion, .contenedor-main .sucursalesPrincipales .contenedor__cardSucursales .cardSucursales .cardSucursales__info .cardSucursales__info--telefono {
+            display: flex;
+            align-items: center;
+            justify-content: flex-start; }
+            .contenedor-main .sucursalesPrincipales .contenedor__cardSucursales .cardSucursales .cardSucursales__info .cardSucursales__info--direccion p, .contenedor-main .sucursalesPrincipales .contenedor__cardSucursales .cardSucursales .cardSucursales__info .cardSucursales__info--telefono p {
+              padding: 0 0 0 15px;
+              font-size: 15px;
+              text-align: center; }
+        .contenedor-main .sucursalesPrincipales .contenedor__cardSucursales .sucur2, .contenedor-main .sucursalesPrincipales .contenedor__cardSucursales .sucur3 {
+          display: none; }
+      .contenedor-main .sucursalesPrincipales .icono__flecha--derecha {
+        grid-area: fleDer;
+        display: flex;
+        align-items: center;
+        justify-content: center; }
+        .contenedor-main .sucursalesPrincipales .icono__flecha--derecha .icono__flecha--principal {
+          color: #660099; } }
+
+@media only screen and (min-width: 769px) and (max-width: 1023px) {
+  .contenedor-main {
+    display: grid;
+    grid-template-areas: "destacado" "subtituloProdDes" "prodDes" "subtituloSucPrin" "sucPrin";
+    grid-template-columns: 100%;
+    grid-template-rows: auto; }
+    .contenedor-main .icono__flecha {
+      width: 100%; }
+    .contenedor-main .section__bg {
+      background-image: url(../assets/img/pick1.jpg);
+      background-repeat: no-repeat;
+      background-size: cover;
+      height: 250px; }
+    .contenedor-main .destacado {
+      grid-area: destacado;
+      display: grid;
+      grid-template-areas: "fleIzq botonDes fleDer";
+      grid-template-columns: 10% 80% 10%; }
+      .contenedor-main .destacado .icono__flecha--izquierda {
+        grid-area: fleIzq;
+        display: flex;
+        align-items: center;
+        justify-content: center; }
+        .contenedor-main .destacado .icono__flecha--izquierda .icono__flecha--secundaria {
+          color: #f6c504; }
+      .contenedor-main .destacado .destacado__imagen {
+        display: none; }
+      .contenedor-main .destacado .icono__flecha--derecha {
+        grid-area: fleDer;
+        display: flex;
+        align-items: center;
+        justify-content: center; }
+        .contenedor-main .destacado .icono__flecha--derecha .icono__flecha--secundaria {
+          color: #f6c504; }
+      .contenedor-main .destacado .destacado__textos {
+        grid-area: botonDes;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: center;
+        margin: 0 0 20px 0; }
+        .contenedor-main .destacado .destacado__textos .subtitulo__texto {
+          color: #fff;
+          text-transform: uppercase;
+          margin: 0 0 0 5vw;
+          font-size: 1.5vh; }
+        .contenedor-main .destacado .destacado__textos .subtitulo__texto--destacado {
+          margin: 0;
+          font-size: 5vw;
+          text-shadow: 0 0 10px #f6c504;
+          text-align: center;
+          margin-bottom: 10px; }
+        .contenedor-main .destacado .destacado__textos .boton__principal {
+          color: #660099;
+          background-color: #f6c504;
+          width: 60%;
+          height: 15%;
+          text-transform: uppercase;
+          font-weight: bold;
+          font-size: 3vw;
+          border: 5px outset #fefd97;
+          box-shadow: 3px 3px 20px 0 #000;
+          border-radius: 10px; }
+    .contenedor-main .subtitulo {
+      background: #660099;
+      height: 5vh;
+      display: flex;
+      align-items: center; }
+      .contenedor-main .subtitulo .subtitulo__texto {
+        color: #fff;
+        text-transform: uppercase;
+        margin: 0 0 0 5vw;
+        font-size: 1.5vh; }
+    .contenedor-main .subt1 {
+      grid-area: subtituloProdDes; }
+    .contenedor-main .productosDestacados {
+      grid-area: prodDes;
+      display: grid;
+      grid-template-areas: "fleIzq cardProd fleDer";
+      grid-template-columns: 10% 80% 10%; }
+      .contenedor-main .productosDestacados .icono__flecha--izquierda {
+        grid-area: fleIzq;
+        display: flex;
+        align-items: center;
+        justify-content: center; }
+        .contenedor-main .productosDestacados .icono__flecha--izquierda .icono__flecha--principal {
+          color: #660099; }
+      .contenedor-main .productosDestacados .contenedor__cardProducto {
+        grid-area: cardProd;
+        display: flex;
+        justify-content: space-evenly; }
+        .contenedor-main .productosDestacados .contenedor__cardProducto .cardProducto {
+          width: 50%;
+          box-shadow: 0px 0px 20px 0 #000;
+          border-radius: 5px;
+          margin: 20px 0;
+          flex-direction: column;
+          display: flex;
+          align-items: center;
+          justify-content: center; }
+          .contenedor-main .productosDestacados .contenedor__cardProducto .cardProducto .cardProducto__img {
+            width: 80%; }
+          .contenedor-main .productosDestacados .contenedor__cardProducto .cardProducto .cardProducto__titulo {
+            text-transform: uppercase;
+            font-size: 20px;
+            text-align: center; }
+          .contenedor-main .productosDestacados .contenedor__cardProducto .cardProducto .cardProducto__descripcion {
+            display: none; }
+          .contenedor-main .productosDestacados .contenedor__cardProducto .cardProducto .cardProducto__precio {
+            font-size: 30px; }
+        .contenedor-main .productosDestacados .contenedor__cardProducto .prod2, .contenedor-main .productosDestacados .contenedor__cardProducto .prod3 {
+          display: none; }
+      .contenedor-main .productosDestacados .icono__flecha--derecha {
+        grid-area: fleDer;
+        display: flex;
+        align-items: center;
+        justify-content: center; }
+        .contenedor-main .productosDestacados .icono__flecha--derecha .icono__flecha--principal {
+          color: #660099; }
+    .contenedor-main .subt2 {
+      grid-area: subtituloSucPrin; }
+    .contenedor-main .sucursalesPrincipales {
+      grid-area: sucPrin;
+      display: grid;
+      grid-template-areas: "fleIzq cardSucur fleDer";
+      grid-template-columns: 10% 80% 10%; }
+      .contenedor-main .sucursalesPrincipales .icono__flecha--izquierda {
+        grid-area: fleIzq;
+        display: flex;
+        align-items: center;
+        justify-content: center; }
+        .contenedor-main .sucursalesPrincipales .icono__flecha--izquierda .icono__flecha--principal {
+          color: #660099; }
+      .contenedor-main .sucursalesPrincipales .contenedor__cardSucursales {
+        grid-area: cardSucur;
+        display: flex;
+        justify-content: space-evenly; }
+        .contenedor-main .sucursalesPrincipales .contenedor__cardSucursales .cardSucursales {
+          width: 80%;
+          display: flex;
+          flex-direction: column;
+          align-items: center; }
+          .contenedor-main .sucursalesPrincipales .contenedor__cardSucursales .cardSucursales .contenedor__imagenSucursal {
+            width: 70%;
+            height: 35vw;
+            overflow: hidden;
+            margin: 20px 40px 10px 40px;
+            position: relative;
+            border-radius: 10px; }
+            .contenedor-main .sucursalesPrincipales .contenedor__cardSucursales .cardSucursales .contenedor__imagenSucursal .cardSucursales__imagen {
+              position: absolute;
+              width: 500px;
+              left: -100%;
+              right: -100%;
+              top: -100%;
+              bottom: -100%;
+              margin: auto;
+              min-height: 100%;
+              min-width: 100%; }
+          .contenedor-main .sucursalesPrincipales .contenedor__cardSucursales .cardSucursales .cardSucursales__titulo {
+            display: flex;
+            justify-content: center;
+            font-size: 20px;
+            margin: 10px 0 10px 0; }
+          .contenedor-main .sucursalesPrincipales .contenedor__cardSucursales .cardSucursales .cardSucursales__info svg.iconoSucursal {
+            width: 30px; }
+          .contenedor-main .sucursalesPrincipales .contenedor__cardSucursales .cardSucursales .cardSucursales__info .cardSucursales__info--direccion, .contenedor-main .sucursalesPrincipales .contenedor__cardSucursales .cardSucursales .cardSucursales__info .cardSucursales__info--telefono {
+            display: flex;
+            align-items: center;
+            justify-content: flex-start; }
+            .contenedor-main .sucursalesPrincipales .contenedor__cardSucursales .cardSucursales .cardSucursales__info .cardSucursales__info--direccion p, .contenedor-main .sucursalesPrincipales .contenedor__cardSucursales .cardSucursales .cardSucursales__info .cardSucursales__info--telefono p {
+              padding: 0 0 0 15px;
+              font-size: 15px;
+              text-align: center; }
+        .contenedor-main .sucursalesPrincipales .contenedor__cardSucursales .sucur2, .contenedor-main .sucursalesPrincipales .contenedor__cardSucursales .sucur3 {
+          display: none; }
+      .contenedor-main .sucursalesPrincipales .icono__flecha--derecha {
+        grid-area: fleDer;
+        display: flex;
+        align-items: center;
+        justify-content: center; }
+        .contenedor-main .sucursalesPrincipales .icono__flecha--derecha .icono__flecha--principal {
+          color: #660099; } }
+
+@media only screen and (min-width: 1024px) {
+  .contenedor-main {
+    display: grid;
+    grid-template-areas: "destacado" "subtituloProdDes" "prodDes" "subtituloSucPrin" "sucPrin";
+    grid-template-columns: 100%;
+    grid-template-rows: auto; }
+    .contenedor-main .section__bg {
+      background-image: url(../assets/img/textura_fondo.jpg);
+      background-repeat: no-repeat;
+      background-size: cover; }
+    .contenedor-main .icono__flecha {
+      width: 80%; }
+    .contenedor-main .destacado {
+      grid-area: destacado;
+      display: grid;
+      grid-template-areas: "fleIzq txtDes imgDes fleDer";
+      grid-template-columns: 5% 40% 50% 5%; }
+      .contenedor-main .destacado .icono__flecha--izquierda {
+        grid-area: fleIzq;
+        display: flex;
+        align-items: center;
+        justify-content: center; }
+        .contenedor-main .destacado .icono__flecha--izquierda .icono__flecha--secundaria {
+          color: #f6c504; }
+      .contenedor-main .destacado .destacado__imagen {
+        margin: 20px 0px;
+        grid-area: imgDes;
+        display: flex;
+        align-items: center;
+        justify-content: center; }
+        .contenedor-main .destacado .destacado__imagen .destacado__imagen--efecto {
+          border-radius: 5px;
+          width: 80%; }
+      .contenedor-main .destacado .icono__flecha--derecha {
+        grid-area: fleDer;
+        display: flex;
+        align-items: center;
+        justify-content: center; }
+        .contenedor-main .destacado .icono__flecha--derecha .icono__flecha--secundaria {
+          color: #f6c504; }
+      .contenedor-main .destacado .destacado__textos {
+        grid-area: txtDes;
+        flex-direction: column;
+        display: flex;
+        align-items: center;
+        justify-content: center; }
+        .contenedor-main .destacado .destacado__textos .subtitulo__texto {
+          color: #fff;
+          text-transform: uppercase;
+          margin: 0 0 0 100px;
+          font-size: 25px; }
+        .contenedor-main .destacado .destacado__textos .subtitulo__texto--destacado {
+          margin: 0;
+          font-size: 5vw;
+          text-shadow: 0 0 10px #f6c504;
+          text-align: center;
+          margin-bottom: 20px; }
+        .contenedor-main .destacado .destacado__textos .boton__principal {
+          color: #660099;
+          background-color: #f6c504;
+          width: 60%;
+          height: 15%;
+          text-transform: uppercase;
+          font-weight: bold;
+          font-size: 2vw;
+          border: 5px outset #fefd97;
+          box-shadow: 3px 3px 20px 0 #000;
+          border-radius: 10px;
+          margin-top: 20px; }
+    .contenedor-main .subtitulo {
+      background: #660099;
+      height: 56px;
+      display: flex;
+      align-items: center; }
+      .contenedor-main .subtitulo .subtitulo__texto {
+        color: #fff;
+        text-transform: uppercase;
+        margin: 0 0 0 100px;
+        font-size: 25px; }
+    .contenedor-main .subt1 {
+      grid-area: subtituloProdDes; }
+    .contenedor-main .productosDestacados {
+      grid-area: prodDes;
+      display: grid;
+      grid-template-areas: "fleIzq cardProd fleDer";
+      grid-template-columns: 5% 90% 5%; }
+      .contenedor-main .productosDestacados .icono__flecha--izquierda {
+        grid-area: fleIzq;
+        display: flex;
+        align-items: center;
+        justify-content: center; }
+        .contenedor-main .productosDestacados .icono__flecha--izquierda .icono__flecha--principal {
+          color: #660099; }
+      .contenedor-main .productosDestacados .contenedor__cardProducto {
+        grid-area: cardProd;
+        display: flex;
+        justify-content: space-evenly; }
+        .contenedor-main .productosDestacados .contenedor__cardProducto .cardProducto {
+          width: 25%;
+          box-shadow: 0px 0px 20px 0 #000;
+          border-radius: 5px;
+          padding: 0 15px;
+          margin: 40px 0;
+          flex-direction: column;
+          display: flex;
+          align-items: center;
+          justify-content: center; }
+          .contenedor-main .productosDestacados .contenedor__cardProducto .cardProducto .cardProducto__img {
+            width: 80%; }
+          .contenedor-main .productosDestacados .contenedor__cardProducto .cardProducto .cardProducto__titulo {
+            text-transform: uppercase;
+            font-size: 20px; }
+          .contenedor-main .productosDestacados .contenedor__cardProducto .cardProducto .cardProducto__descripcion {
+            width: 90%;
+            font-size: 16px;
+            font-weight: 400; }
+          .contenedor-main .productosDestacados .contenedor__cardProducto .cardProducto .cardProducto__precio {
+            font-size: 30px; }
+      .contenedor-main .productosDestacados .icono__flecha--derecha {
+        grid-area: fleDer;
+        display: flex;
+        align-items: center;
+        justify-content: center; }
+        .contenedor-main .productosDestacados .icono__flecha--derecha .icono__flecha--principal {
+          color: #660099; }
+    .contenedor-main .subt2 {
+      grid-area: subtituloSucPrin; }
+    .contenedor-main .sucursalesPrincipales {
+      grid-area: sucPrin;
+      display: grid;
+      grid-template-areas: "fleIzq cardSucur fleDer";
+      grid-template-columns: 5% 90% 5%; }
+      .contenedor-main .sucursalesPrincipales .icono__flecha--izquierda {
+        grid-area: fleIzq;
+        display: flex;
+        align-items: center;
+        justify-content: center; }
+        .contenedor-main .sucursalesPrincipales .icono__flecha--izquierda .icono__flecha--principal {
+          color: #660099; }
+      .contenedor-main .sucursalesPrincipales .contenedor__cardSucursales {
+        grid-area: cardSucur;
+        display: flex;
+        justify-content: space-evenly; }
+        .contenedor-main .sucursalesPrincipales .contenedor__cardSucursales .cardSucursales {
+          width: 25%;
+          display: flex;
+          flex-direction: column;
+          align-items: center; }
+          .contenedor-main .sucursalesPrincipales .contenedor__cardSucursales .cardSucursales .contenedor__imagenSucursal {
+            width: 90%;
+            height: 20vw;
+            overflow: hidden;
+            margin: 40px 20px;
+            position: relative;
+            border-radius: 10px; }
+            .contenedor-main .sucursalesPrincipales .contenedor__cardSucursales .cardSucursales .contenedor__imagenSucursal .cardSucursales__imagen {
+              position: absolute;
+              width: 500px;
+              left: -100%;
+              right: -100%;
+              top: -100%;
+              bottom: -100%;
+              margin: auto;
+              min-height: 100%;
+              min-width: 100%; }
+          .contenedor-main .sucursalesPrincipales .contenedor__cardSucursales .cardSucursales .cardSucursales__titulo {
+            display: flex;
+            justify-content: center;
+            font-size: 2.5vw;
+            margin: 0 0 20px 0; }
+          .contenedor-main .sucursalesPrincipales .contenedor__cardSucursales .cardSucursales .cardSucursales__info svg.iconoSucursal {
+            width: 40px; }
+          .contenedor-main .sucursalesPrincipales .contenedor__cardSucursales .cardSucursales .cardSucursales__info .cardSucursales__info--direccion, .contenedor-main .sucursalesPrincipales .contenedor__cardSucursales .cardSucursales .cardSucursales__info .cardSucursales__info--telefono {
+            display: flex;
+            align-items: center;
+            justify-content: flex-start; }
+            .contenedor-main .sucursalesPrincipales .contenedor__cardSucursales .cardSucursales .cardSucursales__info .cardSucursales__info--direccion p, .contenedor-main .sucursalesPrincipales .contenedor__cardSucursales .cardSucursales .cardSucursales__info .cardSucursales__info--telefono p {
+              padding: 0 0 0 15px;
+              font-size: 25px; }
+      .contenedor-main .sucursalesPrincipales .icono__flecha--derecha {
+        grid-area: fleDer;
+        display: flex;
+        align-items: center;
+        justify-content: center; }
+        .contenedor-main .sucursalesPrincipales .icono__flecha--derecha .icono__flecha--principal {
+          color: #660099; } }
 
 @media only screen and (max-width: 768px) {
   main .contenedorPadre__nosotros {
@@ -383,11 +944,13 @@ body {
       line-height: 20px;
       font-size: 16px;
       display: flex;
+      align-items: center;
       justify-content: center; }
     main .contenedorPadre__nosotros .nosotros__imagen {
       grid-area: imagen;
       margin: 0 auto 24px;
       display: flex;
+      align-items: center;
       justify-content: center; }
       main .contenedorPadre__nosotros .nosotros__imagen .img__nosotros {
         border-radius: 5px;
@@ -406,6 +969,7 @@ body {
       line-height: 20px;
       font-size: 16px;
       display: flex;
+      align-items: center;
       justify-content: center; }
       main .contenedorPadre__nosotros .nosotros__texto p {
         margin: 0; }
@@ -413,6 +977,7 @@ body {
       grid-area: imagen;
       margin: 0 auto 24px;
       display: flex;
+      align-items: center;
       justify-content: center; }
       main .contenedorPadre__nosotros .nosotros__imagen .img__nosotros {
         border-radius: 5px;
@@ -435,8 +1000,9 @@ body {
       grid-area: imagen;
       margin: 0 0 40px 0;
       display: flex;
-      justify-content: center;
-      align-items: center; }
+      display: flex;
+      align-items: center;
+      justify-content: center; }
       main .contenedorPadre__nosotros .nosotros__imagen .img__nosotros {
         border-radius: 5px;
         width: 80%; } }

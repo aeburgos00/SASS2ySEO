@@ -141,9 +141,7 @@
         .footer__derechos {
             background: $colorAmarillo;
             height: 56px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
+            @include flexCenterCenter;
             h3 {
                 margin: 0;
                 color: $colorVioleta;

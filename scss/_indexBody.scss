@@ -1,0 +1,572 @@
+@media only screen and (max-width: 768px) {
+    .contenedor-main {
+        display: grid;
+        grid-template-areas: 
+        "destacado"
+        "subtituloProdDes"
+        "prodDes"
+        "subtituloSucPrin"
+        "sucPrin";
+        grid-template-columns: 100%;
+        grid-template-rows: auto;
+        .icono__flecha {width: 100%;}
+        .section__bg {
+            background-image: url(../assets/img/pick1.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 250px;
+        }
+        .destacado {
+            grid-area: destacado;
+            display: grid;
+            grid-template-areas: 
+            "fleIzq botonDes fleDer" ;
+            grid-template-columns: 10% 80% 10%;
+            .icono__flecha--izquierda {
+                grid-area: fleIzq;
+                @include flexCenterCenter;
+                .icono__flecha--secundaria {color:$colorAmarillo;}
+            }
+            .destacado__imagen {display: none;}
+            .icono__flecha--derecha {
+                grid-area: fleDer;
+                @include flexCenterCenter;
+                .icono__flecha--secundaria {color:$colorAmarillo;}
+            }
+            .destacado__textos {
+                grid-area: botonDes;
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-end;
+                align-items: center;
+                margin: 0 0 20px 0;
+                .subtitulo__texto {
+                    color: $colorBlanco;
+                    text-transform: uppercase;
+                    margin: 0 0 0 5vw;
+                    font-size: 1.5vh;
+                }
+                .subtitulo__texto--destacado {
+                    margin: 0;
+                    font-size: 5vw;
+                    text-shadow: 0 0 10px $colorAmarillo;
+                    text-align: center;
+                    margin-bottom: 10px;         
+                }
+                .boton__principal {
+                    @include colorYbg($colorVioleta, $colorAmarillo);
+                    @include tamBox(60%, 15%);
+                    text-transform: uppercase;
+                    font-weight: bold;
+                    font-size: 3vw;
+                    border: 5px outset $colorAmarilloClaro;
+                    box-shadow: 3px 3px 20px 0 $colorNegro;
+                    border-radius: 10px;
+                }
+            }
+        }
+        .subtitulo {
+            background: $colorVioleta;
+            height: 5vh;
+            display: flex;
+            align-items: center;
+            .subtitulo__texto {
+                color: $colorBlanco;
+                text-transform: uppercase;
+                margin: 0 0 0 5vw;
+                font-size: 1.5vh;
+            }
+        }
+        .subt1 {grid-area: subtituloProdDes;}
+        .productosDestacados{
+            grid-area: prodDes;
+            display: grid;
+            grid-template-areas: 
+            "fleIzq cardProd fleDer" ;
+            grid-template-columns: 10% 80% 10%;            
+            .icono__flecha--izquierda {
+                grid-area: fleIzq;
+                @include flexCenterCenter;
+                .icono__flecha--principal {color:$colorVioleta;}
+            }
+            .contenedor__cardProducto {
+                grid-area: cardProd;
+                display: flex;
+                justify-content: space-evenly;
+                .cardProducto {
+                    width: 50%;
+                    box-shadow: 0px 0px 20px 0 $colorNegro;
+                    border-radius: 5px;
+                    margin: 20px 0;
+                    flex-direction: column;
+                    @include flexCenterCenter;
+                    .cardProducto__img {width: 80%;}
+                    .cardProducto__titulo {
+                        text-transform: uppercase;
+                        font-size: 20px;
+                        text-align: center;
+                    }
+                    .cardProducto__descripcion {display: none;}
+                    .cardProducto__precio{font-size: 30px;}
+                }
+                .prod2, .prod3 {display: none;}
+            }
+            .icono__flecha--derecha {
+                grid-area: fleDer;
+                @include flexCenterCenter;
+                .icono__flecha--principal {color:$colorVioleta;}
+            }
+        }
+        .subt2 {grid-area: subtituloSucPrin;}
+        .sucursalesPrincipales {
+            grid-area: sucPrin;
+            display: grid;
+            grid-template-areas: 
+            "fleIzq cardSucur fleDer" ;
+            grid-template-columns: 10% 80% 10%;
+            .icono__flecha--izquierda {
+                grid-area: fleIzq;
+                @include flexCenterCenter;
+                .icono__flecha--principal {color:$colorVioleta;}
+            }
+            .contenedor__cardSucursales {
+                grid-area: cardSucur;
+                display: flex;
+                justify-content: space-evenly;
+                .cardSucursales{
+                    width: 80%;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    .contenedor__imagenSucursal {
+                        @include tamBox(70%, 35vw);
+                        overflow: hidden;
+                        margin: 20px 40px 10px 40px;
+                        position: relative;
+                        border-radius: 10px;
+                        .cardSucursales__imagen {
+                            position: absolute;
+                            width: 500px;
+                            left: -100%;
+                            right: -100%;
+                            top: -100%;
+                            bottom: -100%;
+                            margin: auto;
+                            min-height: 100%;
+                            min-width: 100%;
+                        }
+                    }
+                    .cardSucursales__titulo {
+                        display: flex;
+                        justify-content: center;
+                        font-size: 20px;
+                        margin: 10px 0 10px 0;
+                    }
+                    .cardSucursales__info {
+                        svg.iconoSucursal {width: 30px;}
+                        .cardSucursales__info--direccion, .cardSucursales__info--telefono {
+                            display: flex;
+                            align-items: center;
+                            justify-content: flex-start;
+                            p {
+                                padding: 0 0 0 15px;
+                                font-size: 15px;
+                                text-align: center;
+                            }
+                        }
+                    }
+                }
+                .sucur2, .sucur3 {display: none;}
+            }
+            .icono__flecha--derecha {
+                grid-area: fleDer;
+                @include flexCenterCenter;
+                .icono__flecha--principal {color:$colorVioleta;}
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 769px) and (max-width: 1023px) {
+    .contenedor-main {
+        display: grid;
+        grid-template-areas: 
+        "destacado"
+        "subtituloProdDes"
+        "prodDes"
+        "subtituloSucPrin"
+        "sucPrin";
+        grid-template-columns: 100%;
+        grid-template-rows: auto;
+        .icono__flecha {width: 100%;}
+        .section__bg {
+            background-image: url(../assets/img/pick1.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 250px;
+        }
+        .destacado {
+            grid-area: destacado;
+            display: grid;
+            grid-template-areas: 
+            "fleIzq botonDes fleDer" ;
+            grid-template-columns: 10% 80% 10%;
+            .icono__flecha--izquierda {
+                grid-area: fleIzq;
+                @include flexCenterCenter;
+                .icono__flecha--secundaria {color:$colorAmarillo;}
+            }
+            .destacado__imagen {display: none;}
+            .icono__flecha--derecha {
+                grid-area: fleDer;
+                @include flexCenterCenter;
+                .icono__flecha--secundaria {color:$colorAmarillo;}
+            }
+            .destacado__textos {
+                grid-area: botonDes;
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-end;
+                align-items: center;
+                margin: 0 0 20px 0;
+                .subtitulo__texto {
+                    color: $colorBlanco;
+                    text-transform: uppercase;
+                    margin: 0 0 0 5vw;
+                    font-size: 1.5vh;
+                }
+                .subtitulo__texto--destacado {
+                    margin: 0;
+                    font-size: 5vw;
+                    text-shadow: 0 0 10px $colorAmarillo;
+                    text-align: center;
+                    margin-bottom: 10px;         
+                }
+                .boton__principal {
+                    @include colorYbg($colorVioleta, $colorAmarillo);
+                    @include tamBox(60%, 15%);
+                    text-transform: uppercase;
+                    font-weight: bold;
+                    font-size: 3vw;
+                    border: 5px outset $colorAmarilloClaro;
+                    box-shadow: 3px 3px 20px 0 $colorNegro;
+                    border-radius: 10px;
+                }
+            }
+        }
+        .subtitulo {
+            background: $colorVioleta;
+            height: 5vh;
+            display: flex;
+            align-items: center;
+            .subtitulo__texto {
+                color: $colorBlanco;
+                text-transform: uppercase;
+                margin: 0 0 0 5vw;
+                font-size: 1.5vh;
+            }
+        }
+        .subt1 {grid-area: subtituloProdDes;}
+        .productosDestacados{
+            grid-area: prodDes;
+            display: grid;
+            grid-template-areas: 
+            "fleIzq cardProd fleDer" ;
+            grid-template-columns: 10% 80% 10%;            
+            .icono__flecha--izquierda {
+                grid-area: fleIzq;
+                @include flexCenterCenter;
+                .icono__flecha--principal {color:$colorVioleta;}
+            }
+            .contenedor__cardProducto {
+                grid-area: cardProd;
+                display: flex;
+                justify-content: space-evenly;
+                .cardProducto {
+                    width: 50%;
+                    box-shadow: 0px 0px 20px 0 $colorNegro;
+                    border-radius: 5px;
+                    margin: 20px 0;
+                    flex-direction: column;
+                    @include flexCenterCenter;
+                    .cardProducto__img {width: 80%;}
+                    .cardProducto__titulo {
+                        text-transform: uppercase;
+                        font-size: 20px;
+                        text-align: center;
+                    }
+                    .cardProducto__descripcion {display: none;}
+                    .cardProducto__precio{font-size: 30px;}
+                }
+                .prod2, .prod3 {display: none;}
+            }
+            .icono__flecha--derecha {
+                grid-area: fleDer;
+                @include flexCenterCenter;
+                .icono__flecha--principal {color:$colorVioleta;}
+            }
+        }
+        .subt2 {grid-area: subtituloSucPrin;}
+        .sucursalesPrincipales {
+            grid-area: sucPrin;
+            display: grid;
+            grid-template-areas: 
+            "fleIzq cardSucur fleDer" ;
+            grid-template-columns: 10% 80% 10%;
+            .icono__flecha--izquierda {
+                grid-area: fleIzq;
+                @include flexCenterCenter;
+                .icono__flecha--principal {color:$colorVioleta;}
+            }
+            .contenedor__cardSucursales {
+                grid-area: cardSucur;
+                display: flex;
+                justify-content: space-evenly;
+                .cardSucursales{
+                    width: 80%;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    .contenedor__imagenSucursal {
+                        @include tamBox(70%, 35vw);
+                        overflow: hidden;
+                        margin: 20px 40px 10px 40px;
+                        position: relative;
+                        border-radius: 10px;
+                        .cardSucursales__imagen {
+                            position: absolute;
+                            width: 500px;
+                            left: -100%;
+                            right: -100%;
+                            top: -100%;
+                            bottom: -100%;
+                            margin: auto;
+                            min-height: 100%;
+                            min-width: 100%;
+                        }
+                    }
+                    .cardSucursales__titulo {
+                        display: flex;
+                        justify-content: center;
+                        font-size: 20px;
+                        margin: 10px 0 10px 0;
+                    }
+                    .cardSucursales__info {
+                        svg.iconoSucursal {width: 30px;}
+                        .cardSucursales__info--direccion, .cardSucursales__info--telefono {
+                            display: flex;
+                            align-items: center;
+                            justify-content: flex-start;
+                            p {
+                                padding: 0 0 0 15px;
+                                font-size: 15px;
+                                text-align: center;
+                            }
+                        }
+                    }
+                }
+                .sucur2, .sucur3 {display: none;}
+            }
+            .icono__flecha--derecha {
+                grid-area: fleDer;
+                @include flexCenterCenter;
+                .icono__flecha--principal {color:$colorVioleta;}
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    .contenedor-main {
+        display: grid;
+        grid-template-areas: 
+        "destacado"
+        "subtituloProdDes"
+        "prodDes"
+        "subtituloSucPrin"
+        "sucPrin";
+        grid-template-columns: 100%;
+        grid-template-rows: auto;
+        .section__bg {
+            background-image: url(../assets/img/textura_fondo.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        .icono__flecha {width: 80%;}
+        .destacado {
+            grid-area: destacado;
+            display: grid;
+            grid-template-areas: 
+            "fleIzq txtDes imgDes fleDer" ;
+            grid-template-columns: 5% 40% 50% 5%;
+            .icono__flecha--izquierda {
+                grid-area: fleIzq;
+                @include flexCenterCenter;
+                .icono__flecha--secundaria {color:$colorAmarillo;}
+            }
+            .destacado__imagen {
+                margin: 20px 0px;
+                grid-area: imgDes;
+                @include flexCenterCenter;
+                .destacado__imagen--efecto {
+                    border-radius: 5px;
+                    width: 80%;
+                }
+            }
+            .icono__flecha--derecha {
+                grid-area: fleDer;
+                @include flexCenterCenter;
+                .icono__flecha--secundaria {color:$colorAmarillo;}
+            }
+            .destacado__textos {
+                grid-area: txtDes;
+                flex-direction: column;
+                @include flexCenterCenter;
+                .subtitulo__texto {
+                    color: $colorBlanco;
+                    text-transform: uppercase;
+                    margin: 0 0 0 100px;
+                    font-size: 25px;
+                }
+                .subtitulo__texto--destacado {
+                    margin: 0;
+                    font-size: 5vw;
+                    text-shadow: 0 0 10px $colorAmarillo;
+                    text-align: center;
+                    margin-bottom: 20px;
+                }
+                .boton__principal {
+                    @include colorYbg($colorVioleta, $colorAmarillo);
+                    @include tamBox(60%, 15%);
+                    text-transform: uppercase;
+                    font-weight: bold;
+                    font-size: 2vw;
+                    border: 5px outset $colorAmarilloClaro;
+                    box-shadow: 3px 3px 20px 0 $colorNegro;
+                    border-radius: 10px;
+                    margin-top: 20px;
+                }
+            }
+        }
+        .subtitulo {
+            background: $colorVioleta;
+            height: 56px;
+            display: flex;
+            align-items: center;
+            .subtitulo__texto {
+                color: $colorBlanco;
+                text-transform: uppercase;
+                margin: 0 0 0 100px;
+                font-size: 25px;
+            }
+        }
+        .subt1 {grid-area: subtituloProdDes;}
+        .productosDestacados{
+            grid-area: prodDes;
+            display: grid;
+            grid-template-areas: 
+            "fleIzq cardProd fleDer" ;
+            grid-template-columns: 5% 90% 5%;
+            .icono__flecha--izquierda {
+                grid-area: fleIzq;
+                @include flexCenterCenter;
+                .icono__flecha--principal {color:$colorVioleta;}
+            }
+            .contenedor__cardProducto {
+                grid-area: cardProd;
+                display: flex;
+                justify-content: space-evenly;
+                .cardProducto {
+                    width: 25%;
+                    box-shadow: 0px 0px 20px 0 $colorNegro;
+                    border-radius: 5px;
+                    padding: 0 15px;
+                    margin: 40px 0;
+                    flex-direction: column;
+                    @include flexCenterCenter;
+                    .cardProducto__img {width: 80%;}
+                    .cardProducto__titulo {
+                        text-transform: uppercase;
+                        font-size: 20px;
+                    }
+                    .cardProducto__descripcion {
+                        width: 90%;
+                        font-size: 16px;
+                        font-weight: 400;
+                    }
+                    .cardProducto__precio{font-size: 30px;}
+                }
+            }
+            .icono__flecha--derecha {
+                grid-area: fleDer;
+                @include flexCenterCenter;
+                .icono__flecha--principal {color:$colorVioleta;}
+            }
+        }
+        .subt2 {grid-area: subtituloSucPrin;}
+        .sucursalesPrincipales {
+            grid-area: sucPrin;
+            display: grid;
+            grid-template-areas: 
+            "fleIzq cardSucur fleDer" ;
+            grid-template-columns: 5% 90% 5%;
+            .icono__flecha--izquierda {
+                grid-area: fleIzq;
+                @include flexCenterCenter;
+                .icono__flecha--principal {color:$colorVioleta;}
+            }
+            .contenedor__cardSucursales {
+                grid-area: cardSucur;
+                display: flex;
+                justify-content: space-evenly;
+                .cardSucursales{
+                    width: 25%;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    .contenedor__imagenSucursal {
+                        @include tamBox(90%, 20vw);
+                        overflow: hidden;
+                        margin: 40px 20px;
+                        position: relative;
+                        border-radius: 10px;
+                        .cardSucursales__imagen {
+                            position: absolute;
+                            width: 500px;
+                            left: -100%;
+                            right: -100%;
+                            top: -100%;
+                            bottom: -100%;
+                            margin: auto;
+                            min-height: 100%;
+                            min-width: 100%;
+                        }
+                    }
+                    .cardSucursales__titulo {
+                        display: flex;
+                        justify-content: center;
+                        font-size: 2.5vw;
+                        margin: 0 0 20px 0;
+                    }
+                    .cardSucursales__info {
+                        svg.iconoSucursal {width: 40px;}
+                        .cardSucursales__info--direccion, .cardSucursales__info--telefono {
+                            display: flex;
+                            align-items: center;
+                            justify-content: flex-start;
+                            p {
+                                padding: 0 0 0 15px;
+                                font-size: 25px;
+                            }
+                        }
+                    }
+                }
+            }
+            .icono__flecha--derecha {
+                grid-area: fleDer;
+                @include flexCenterCenter;
+                .icono__flecha--principal {color:$colorVioleta;}
+            }
+        }
+    }
+}
